@@ -1,0 +1,63 @@
+.hapzheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+  min-width: 100vw;
+
+  background: linear-gradient(90deg, #333333 4.8%, rgba(51, 51, 51, 0) 70.13%);
+
+  @media screen and (max-width: 562px) {
+    background-image: url(../../assets/images/woman-375.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 563px) and (max-width: 749px) {
+    background-image: url(../../assets/images/woman-563.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: 750px) {
+    background-image: url(../../assets/images/woman-700.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h1 {
+    margin-left: 27px;
+  }
+  h2 {
+    margin: 0;
+    display: flex;
+    font-weight: normal;
+    font-size: 36px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    small {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+.tabs {
+  display: flex;
+  height: 44px;
+  button {
+    width: 85vw;
+    font-family: inherit;
+    text-transform: uppercase;
+    background: rgba(79, 79, 79, 0.4);
+    background-blend-mode: overlay;
+    border: 1px solid rgba(242, 242, 242, 0.4);
+    box-sizing: border-box;
+    color: #f2f2f2;
+    &:hover {
+      border-top: 3px solid #f2f2f2;
+    }
+    &:active {
+      border-top: 3px solid #f2f2f2;
+    }
+  }
+}

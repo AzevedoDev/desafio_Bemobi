@@ -1,27 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import LogoHapz from '../../assets/images/svg/hapz-logo.svg';
 import api from '../../services/api';
+import './style.scss';
+import ContractBox from '../ContractBox';
 
 export default function Header() {
   const [recarga, setRecarga] = useState([]);
-  // const [dados, setDados] = useState([]);
-  // const [sva, setSva] = useState([]);
+  const [dados, setDados] = useState([]);
 
   async function getRecarga() {
-    const response = await api.get('/recarga');
-    setRecarga(response.data);
+    // const response = await api.get('/recarga');
+    // setRecarga(response.data);
+    setRecarga([{ id: 1, amount: 15, bonus_amount: 5 }, { id: 2, amount: 20, bonus_amount: 10 }]);
   }
-  // async function getDados() {
-  //   const response = await api.get('/dados');
-  //   setDados(response.data);
-  // }
-  // async function getSVA() {
-  //   const response = await api.get('/sva');
-  //   setSva(response.data);
-  // }
+  async function getDados() {
+    // const response = await api.get('/dados');
+    setDados(response.data);
+  }
+
   useEffect(() => {
-    // getDados();
-    // getSVA();
+    getDados();
     getRecarga();
   }, []);
 
@@ -37,15 +35,7 @@ export default function Header() {
           <small>VOCÊ ESTÁ SEM SALDO</small>
         </h2>
         <h2>recarregue agora</h2>
-        <div className="contract">
-          {recarga.map(r => (
-            <div className="contractbox" key={r.id}>
-              <span>R${r.amount}</span>
-              <span>E ganhe R${r.bonus_amount} de bônus</span>
-              <button type="button">contratar</button>
-            </div>
-          ))}
-        </div>
+        <ContractBox props={recarga} />
       </div>
       <div className="tabs">
         <button type="button">Créditos</button>
