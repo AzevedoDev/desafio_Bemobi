@@ -1,0 +1,29 @@
+Oi Pedro. 
+
+Obrigado por nosso contato hoje. 
+Segue abaixo o desafio: 
+
+Você precisa reproduzir com fidelidade o layout encontrado neste link:
+https://www.figma.com/file/DgWkIKXLWANut5pVVihWbmq0/HAPZ?node-id=0%3A1
+
+Você precisará criar uma conta gratuita no figma para visualizar os layouts. 
+Nele você pode visualizar dois estados de uma página de recarga da operadora fictícia chamada Hapz. 
+Sendo as duas primeiras exibidas em TABS que alternam a imagem de fundo e os planos. Observe que o título e a logo não se alteram e a interação deve seguir este padrão.
+
+O portal precisa ter um grande alcance logo deve funcionar em uma grande variedade de celulares. Não é necessário adaptar o layout para tablet e desktop mas a apresentação deve ser boa na maioria dos celulares.
+
+Além disso a página deve estar o mais leve possível pois no caso de uso deste portal em geral o usuário está com baixa conectividade.
+
+Para popular seu layout considere os seguintes endpoints: 
+https://tidal-hearing.glitch.me/recarga para planos de recarga
+https://tidal-hearing.glitch.me/dados para planos de dados 
+https://tidal-hearing.glitch.me/sva para serviços SVA
+
+Fique à vontade para utilizar quaisquer tecnologias mas fique atento aos requisitos apresentados anteriormente.
+
+O formato de entrega é livre desde que tenhamos acesso ao código fonte. 
+
+Em caso de dúvidas estamos à disposição. 
+
+Abraço
+
