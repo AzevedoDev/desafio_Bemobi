@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap");
 @import "_reset";
 @import "_container";
-
+@import "../../../node_modules/font-awesome/css/font-awesome.css";
 body {
   font-family: "Titillium Web", sans-serif;
   width: 100%;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
 }
