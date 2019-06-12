@@ -29,7 +29,7 @@
   }
 }
 .bghapz-woman {
-  @media screen and (max-width: 562px) {
+  @media screen and (max-width: 563px) {
     background-image: url(../../assets/images/woman-375.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
   }
 }
 .bghapz-man {
-  @media screen and (max-width: 562px) {
+  @media screen and (max-width: 563px) {
     background-image: url(../../assets/images/man-375.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,11 +56,11 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  // @media screen and (min-width: 750px) {
-  //   background-image: url(../../assets/images/man-700.png);
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  // }
+  @media screen and (min-width: 750px) {
+    background-image: url(../../assets/images/woman-700.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .tabs {
   display: flex;

@@ -23,12 +23,12 @@ export default function Header() {
     const response = await api.get('/dados');
     setDados(response.data);
     setLoading(false);
+    console.log(response.data);
   }
 
   useEffect(() => {
     getDados();
     getRecarga();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -48,7 +48,7 @@ export default function Header() {
         ) : select !== 'data' ? (
           <ContractBox props={recarga} />
         ) : (
-          <DataBox props={dados} />
+          <DataBox property={dados} />
         )}
       </div>
       <div className="tabs">
