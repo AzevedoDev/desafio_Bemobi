@@ -7,7 +7,6 @@ export default function Content() {
   async function getSVA() {
     const response = await api.get('/sva');
     setSva(response.data);
-    console.log(response.data);
   }
   useEffect(() => {
     getSVA();

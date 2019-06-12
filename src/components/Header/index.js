@@ -23,7 +23,12 @@ export default function Header() {
     const response = await api.get('/dados');
     setDados(response.data);
     setLoading(false);
-    console.log(response.data);
+  }
+  function selectCard(option) {
+    if (option !== 'data') {
+      return <ContractBox props={recarga} />;
+    }
+    return <DataBox property={dados} />;
   }
 
   useEffect(() => {
@@ -43,13 +48,7 @@ export default function Header() {
           <small>VOCÊ ESTÁ SEM SALDO</small>
         </h2>
         <h2>recarregue agora</h2>
-        {loading ? (
-          <img src={SpinnerIcon} alt="Carregando" />
-        ) : select !== 'data' ? (
-          <ContractBox props={recarga} />
-        ) : (
-          <DataBox property={dados} />
-        )}
+        {loading ? <img src={SpinnerIcon} alt="Carregando" /> : selectCard(select)}
       </div>
       <div className="tabs">
         <button
