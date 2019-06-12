@@ -28,6 +28,7 @@ export default function Header() {
   useEffect(() => {
     getDados();
     getRecarga();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
